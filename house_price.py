@@ -1,6 +1,8 @@
 import pickle
 import streamlit as st
+import os
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 house_price_model = pickle.load(open('house_price_model.sav', 'rb'))
 scaler = pickle.load(open('scaler.sav', 'rb'))
 
